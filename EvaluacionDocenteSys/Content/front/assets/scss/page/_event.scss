@@ -1,0 +1,58 @@
+.event-section {
+
+    .event-list {
+        @extend .m-b-0;
+
+        > li {
+            @extend .m-t-30;
+            display: flex;
+
+            &.event-box {
+                border: 1px solid $grey-200;
+                border-radius: $border-radius-large;
+                padding: 20px;
+
+                .event-dep{
+                    padding-left: 30px;
+
+                    .event-time-date{
+                        @extend .m-t-5;
+
+                        li{
+                            margin-right: 50px;
+                            color: $grey-600;
+                            i{
+                                @extend .p-r-5;
+                                line-height: 26px;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            span{
+                                line-height: 26px;
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .event-name{
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $grey-900;
+                        font-weight: $font-weight-semi;
+                        @extend .m-b-10;
+                        @extend .m-t-20;
+                        text-transform: uppercase;
+                    }
+                    p{                        
+                        color: $grey-600;
+                        line-height: 26px;
+                    }
+                    .btn{
+                        @extend .p-l-35;
+                        @extend .p-r-35;
+                    }
+                }
+            }
+        }
+    }
+}
